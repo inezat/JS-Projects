@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Ian Nezat's Servlet project</title>
+ </head>
+ <body>
+  <img src="http://www.csc.lsu.edu/~qywang/CS6210/HTMLExercise/project/Thanksgiving.gif" width="200" alt="LSU Logo">
+
+  <h1>About LSU Computer Science</h1>
+ 
+  <p>
+  Welcome to the <strong>Division of Computer Science and Engineering</strong> at LSU!</em>.
+  </p>
+  
+  <h2>Sign your information to the department!</h2>
+  <form action="/UserRegistrationProject/UserRegistrationServlet" method="post" enctype="multipart/form-data">
+    <label>Name: <input name="name" type="text"></label>
+    <br>
+    <label>Email: <input name="email" type="email"></label>
+    <br>
+    <label>Preferred place:
+      <select name="location">
+        <option value="Baton Rouge">Baton Rouge</option>
+        <option value="New Orleans">New Orleans</option>
+        <option value="New York">New York</option>
+        <option value="Atlanta">Atlanta</option>
+        <option value="Countryside">Countryside</option>
+      </select></label>
+    <br>
+    <fieldset>
+      <legend>Gender:</legend>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </fieldset>
+    <br>
+    <label>Experience:
+    <br>
+    <textarea name="experience"></textarea> 
+    </label>
+    <br>
+    </br>
+    Upload Your Profile Picture:
+    <input type="file" name="file" id="file" /> <br/>
+    FileName:
+    <input type="text" value="myProPic.jpg" name="fileName" id="fileName"/>
+    </br>
+    <!--  <button type="submit">Sign Up</button> -->
+    <input type="submit" value="Upload" name="upload" id="upload" />
+  </form>
+  
+  
+  <br>
+  <br>
+  <a href="http://twitter.com/girldevelopit">Twitter</a> | <a href="http://www.facebook.com/girldevelopit">Facebook</a> | <a href="http://www.flickr.com/photos/40453677@N00/sets/72157626841092971/">Flickr</a>
+
+ </body>
+</html>
